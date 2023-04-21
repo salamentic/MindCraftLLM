@@ -21,7 +21,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
     processor = ImageTextTransformation(args)
     import glob
-    for game_path in sorted(glob.glob("/home/anrao/MindCraft/experiments/Frames_60/main_logs/*")):
+    for game_path in sorted(glob.glob("../Frames_60/main_logs/*")):
         print("NEW GAME", game_path, len(glob.glob(game_path+"/play1*/*.png")))
         frame_texts=[]
         if os.path.exists("image2textMindcraft/"+game_path.split("/")[-1]+".pkl"):
