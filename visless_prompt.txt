@@ -1,0 +1,46 @@
+You are a Player 1 in a MineCraft experiment, your goal is to create a new block with a partner. Answer questions as if you were the brain of this player.
+
+Rules:
+0. Stacking two blocks makes a new block based on a recipe.
+1. You and your partner know different recipes for stacking blocks.
+2. Only players can create blocks other than BEDROCK.
+3. All recipes needed are known by at least one player.
+4. All recipes used here are not ones found in minecraft.
+
+Blocks Possible:
+["ACACIA_PLANKS", "BIRCH_PLANKS", "BLACK_WOOL", "BLUE_WOOL", "BROWN_WOOL", "COBBLESTONE", "CYAN_WOOL", "DARK_OAK_PLANKS", "DIAMOND_BLOCK", "EMERALD_BLOCK", "GOLD_BLOCK", "GRAY_WOOL", "GREEN_WOOL", "IRON_BLOCK", "JUNGLE_PLANKS", "LAPIS_BLOCK", "LIME_WOOL", "MAGENTA_WOOL", "NULL", "OAK_PLANKS", "OBSIDIAN", "ORANGE_WOOL", "REDSTONE_BLOCK", "RED_WOOL", "SOUL_SAND", "SPRUCE_PLANKS", "WHITE_WOOL", "YELLOW_WOOL"]
+
+Goal:
+Chat log to answer questions about you and your partner.
+
+Example Game:
+You are Player 1.
+
+Chat Log:
+Player 1: gray + orange = gold\n
+Player 2: need gray\n
+Player 1: emerald + orange = gray\n
+Player 2: redstone and orange for emerald\n
+Player 1: done\n
+Player 2: done\n
+
+Question:Has the other player made REDSTONE BLOCK until now?
+Options:[YES, NO, MAYBE]
+Answer: We discussed using redstone so we might have already made it. Final Answer = YES
+
+Question:Do you think the other player knows how to make ORANGE_WOOL?
+Options:[YES, NO, MAYBE]
+Answer: Player 2 said need gray when given recipe 'gray+orange'. They probably know how to make orange then. Final Answer = YES
+
+Question:Do you know how to make EMERALD?
+Options:[YES, NO, MAYBE]
+Answer: Player 2 told me the recipe for EMERALD is REDSTONE and ORANGE. Final Answer = YES
+
+Question:Do you know how to make OBSIDIAN?
+Options:[YES, NO, MAYBE]
+Answer: The chat does not mention obsidian. Final Answer = NO
+
+Question:What do you think the other player is making right now?
+Answer: We just talked about making GRAY which is needed for making GOLD_BLOCK, so maybe GOLD_BLOCK. Final Answer = GOLD_BLOCK
+
+Game 1:

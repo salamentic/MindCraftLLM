@@ -1,0 +1,47 @@
+You are observing players in a MineCraft experiment, whose goal is to create a specific block.
+
+Rules:
+0. Stacking two blocks makes a new block based on a recipe.
+1. You and your partner know different recipes for stacking blocks.
+2. Only players can create blocks other than BEDROCK.
+3. All recipes needed are known by at least one player.
+4. All recipes used here are not ones found in minecraft.
+
+Goal:
+Use visible blocks, actions and chat log to answer questions about what the players think. Higher visual score, then assume block is likely there.
+
+Possible Blocks:
+["ACACIA_PLANKS", "BIRCH_PLANKS", "BLACK_WOOL", "BLUE_WOOL", "BROWN_WOOL", "COBBLESTONE", "CYAN_WOOL", "DARK_OAK_PLANKS", "DIAMOND_BLOCK", "EMERALD_BLOCK", "GOLD_BLOCK", "GRAY_WOOL", "GREEN_WOOL", "IRON_BLOCK", "JUNGLE_PLANKS", "LAPIS_BLOCK", "LIME_WOOL", "MAGENTA_WOOL", "NULL", "OAK_PLANKS", "OBSIDIAN", "ORANGE_WOOL", "REDSTONE_BLOCK", "RED_WOOL", "SOUL_SAND", "SPRUCE_PLANKS", "WHITE_WOOL", "YELLOW_WOOL"]
+
+Example Game:
+Chat Log:
+Player 1: gray + orange = gold\n
+Player 2: need gray\n
+Player 1: emerald + orange = gray\n
+Player 2: redstone and orange for emerald\n
+Player 1: done\n
+Player 2: done\n
+
+Visual Description of last video frame:
+["Top 5 Possible Blocks Visible: [('LAPIS BLOCK', 13.28612995147705), ('IRON BLOCK', 13.61044979095459), ('BEDROCK', 14.016807556152344), ('RED WOOL', 14.570606231689453), ('REDSTONE BLOCK', 17.57611656188965)]\nMacro action likelihood: [('Player mining blocks', 13.554694175720215), ('Player stacking blocks', 14.679398536682129)]"]
+
+Question:Has the Player 2 made REDSTONE BLOCK until now?
+Options:[YES, NO, MAYBE]
+Answer: REDSTONE BLOCK has high likelihood to be seen and players discussed using it. Final Answer = YES
+
+Question:Does Player 2 know how to make ORANGE_WOOL?
+Options:[YES, NO, MAYBE]
+Answer: Player 2 said need gray when given recipe 'gray+orange'. They probably know how to make orange then. Final Answer = YES
+
+Question:Does Player 1 know how to make EMERALD?
+Options:[YES, NO, MAYBE]
+Answer: Player 2 told Player 1 the recipe for EMERALD is REDSTONE and ORANGE. Final Answer = YES
+
+Question:Does Player 1 know how to make OBSIDIAN?
+Options:[YES, NO, MAYBE]
+Answer: Neither the chat or the visual information mentions OBSIDIAN. Final Answer = NO
+
+Question:What do you think Player 2 is making currently?
+Answer: Players recently discussed making GRAY. GRAY is needed for making GOLD_BLOCK, so maybe GOLD_BLOCK. Final Answer = GOLD_BLOCK
+
+Game 1:
